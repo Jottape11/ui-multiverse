@@ -3,30 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Demo Tailwind</title>
-  <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+  <title>SE Palmeiras</title>
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+  
+  <!-- FONTE OFICIAL DO PALMEIRAS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
 <!-- bg => background-color / gray-100 => cor e intensidade -->
 
-  <nav class="bg-gray-900 text-white p-6 py-4 flex items-center justify-center md:justify-between">
-    <!-- bg-gray-900 => cor de fundo / text-white => cor do texto -->
-    <span class="hidden md:flex text-xl font-bold">Tailwind Demo</span>
-    <ul class="flex gap-6 text-md">
-      <li><a class="hover:text-cyan-600" href="#grid">Grid</a></li>
-      <li><a class="hover:text-cyan-600" href="#componentes">Componentes</a></li>
-      <li><a class="hover:text-cyan-600" href="#images">Formulário</a></li>
-    </ul>
-  </nav>
+<nav class="bg-emerald-900 text-white p-6 py-4 flex items-center justify-between">
+  <div class="flex items-center gap-2">
+    <i class="bx bxs-trophy text-2xl text-emerald-400"></i>
+    <span class="text-xl font-bold">SE Palmeiras</span>
+  </div>
+  
+  <ul class="hidden md:flex gap-6 text-md font-medium">
+    <li><a class="hover:text-emerald-400 transition" href="#historia">História</a></li>
+    <li><a class="hover:text-emerald-400 transition" href="#academias">Academias</a></li>
+    <li><a class="hover:text-emerald-400 transition" href="#galeria">Galeria</a></li>
+  </ul>
+
+  <a href="#avanti" class="bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold py-2 px-4 rounded transition">
+    Avanti
+  </a>
+</nav>
   
   <div class="max-w-5xl mx-auto px-6 py-12">
-    <header class="text-center mb-12">
-      <h1 class="text-4xl font-bold mb-2">Tailwind na prática</h1>
-      <p class="text-gray-500 text-lg">
-        Classes utilitárias
-      </p>
-    </header>
+<header class="text-center mb-16">
+  <span class="text-emerald-700 font-semibold tracking-wider uppercase text-sm">Desde 1914</span>
+  <h1 class="text-4xl md:text-5xl font-extrabold text-emerald-950 mt-2 mb-4">
+    O Maior Campeão do Brasil
+  </h1>
+  <p class="text-gray-600 text-lg max-w-2xl mx-auto mb-6">
+    Uma história de lutas e de glórias, academias inesquecíveis e a paixão incondicional de milhões de palestrinos.
+  </p>
+</header>
     
     <!-- ---------------------------
     GRID LAYOUT
@@ -34,71 +56,131 @@
     Usa-se diretamente Flexbox ou CSS Grid nativo via classes utilitárias:
     grid, grid-cols-3, gap-4, etc.
     --------------------------- -->
-    <section id="grid" class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4">Layout com classes utilitárias - Grid</h2>
-      
-      <div class="">
-        <div class="p-4">grid-cols-3</div>
-        <div class="p-4">grid-cols-3</div>
-        <div class="p-4">grid-cols-3</div>
+    <section id="grid" class="mb-16">
+  <h2 class="text-2xl font-bold text-emerald-950 mb-6 flex items-center gap-2">
+    <i class="bx bx-award text-emerald-700"></i>
+    Hegemonia sul-americana
+  </h2>
+  
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+    <div class="bg-white p-5 rounded-lg shadow-sm border-l-4 border-emerald-700">
+      <span class="text-xs font-bold text-emerald-700 uppercase tracking-wider">Recordista</span>
+      <h3 class="text-xl font-bold text-gray-900 mt-1">12 Brasileirões</h3>
+      <p class="text-gray-600 text-sm mt-2">Maior vencedor indiscutível da história do futebol brasileiro.</p>
+    </div>
+
+    <div class="bg-white p-5 rounded-lg shadow-sm border-l-4 border-emerald-700">
+      <span class="text-xs font-bold text-emerald-700 uppercase tracking-wider">América</span>
+      <h3 class="text-xl font-bold text-gray-900 mt-1">3 Libertadores</h3>
+      <p class="text-gray-600 text-sm mt-2">Conquistas inesquecíveis em 1999, 2020 e 2021 com a alma palestrina.</p>
+    </div>
+
+    <div class="bg-white p-5 rounded-lg shadow-sm border-l-4 border-emerald-700">
+      <span class="text-xs font-bold text-emerald-700 uppercase tracking-wider">Mata-mata</span>
+      <h3 class="text-xl font-bold text-gray-900 mt-1">4 Copas do Brasil</h3>
+      <p class="text-gray-600 text-sm mt-2">Tradição de decisões épicas e coração quente nos momentos decisivos.</p>
+    </div>
+  </div>
+  
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 border-l-4 border-red-700">
+    <div class="md:col-span-2 bg-emerald-900 text-white p-6 rounded-lg shadow-sm">
+      <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">Casa Alviverde</span>
+      <h3 class="text-xl font-bold mt-1">Nubank Parque & Allianz Parque & Palestra Itália</h3>
+      <p class="text-emerald-100 text-sm mt-2">
+        Do clássico Jardim Suspenso à arena mais moderna do continente. O caldeirão onde a torcida que canta e vibra empurra o time rumo às taças.
+      </p>
+    </div>
+
+    <div class="md:col-span-1 bg-white p-6 rounded-lg shadow-sm border border-emerald-200 flex flex-col justify-between">
+      <div>
+        <span class="text-xs font-bold text-emerald-700 uppercase tracking-wider">Torcida</span>
+        <h3 class="text-xl font-bold text-gray-900 mt-1">Programa Avanti</h3>
+        <p class="text-gray-600 text-sm mt-2">Apoio direto dentro e fora de campo.</p>
+        </div>
       </div>
-      
-      <div class="">
-        <div class="p-4">col-span-2</div>
-        <div class="p-4">col-span-1</div>
-      </div>
-    </section>
+    </div>
+</section>
     
-    <section id="componentes" class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4">Layout com classes utilitárias - Botões</h2>
-      
-      <div class="">
-        
-        <div class="bg-white p-5">
-          <h3 class="text-lg font-semibold mb-2">Card</h3>
-          <p class="text-gray-600 text-sm mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, perspiciatis eum.
-          </p>
-          <button class="">
-          Ação
-          </button>
-        </div>
-        
-        <div class="bg-white p-5">
-          <h3 class="text-lg font-semibold mb-2">Card</h3>
-          <p class="text-gray-600 text-sm mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, perspiciatis eum.
-          </p>
-          <button class="">
-            Outline
-          </button>
-        </div>
-        
-        <div class="bg-white p-5">
-          <h3 class="text-lg font-semibold mb-2">Card</h3>
-          <p class="text-gray-600 text-sm mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, perspiciatis eum.
-          </p>
-          <button class="">
-          Ação
-          </button>
-        </div>
+    <section id="componentes" class="mb-16">
+  <h2 class="text-2xl font-bold text-emerald-950 mb-6 flex items-center gap-2">
+    Experiências Alviverdes
+  </h2>
+  
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    
+    <!-- Card 1  -->
+    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 flex flex-col justify-between">
+      <div>
+        <span class="text-xs font-bold text-emerald-700 uppercase tracking-wider">Arena</span>
+        <h3 class="text-xl font-bold text-gray-900 mt-1 mb-2">Tour Nubank Parque</h3>
+        <p class="text-gray-600 text-sm mb-6">
+          Conheça os vestiários, sala de imprensa e pise na beira do gramado sagrado da nossa arena.
+        </p>
       </div>
-    </section>
-
-    <section id="images" class="mb-12">
-      <div class="flex gap-7">
-        <div class="w-1/2">
-          <img class="blur-xs hover:filter-none transition duration-500 ease-in-out"
-          src="https://picsum.photos/500/300" alt="Imagem gerada aleatoriamente">
-        </div>
-
-        <div class="w-1/2">
-          <img class="grayscale hover:filter-none transition duration-500 ease-in-out"
-          src="https://picsum.photos/500/300" alt="Imagem gerada aleatoriamente">
-        </div>
+      <button class="bg-emerald-700 hover:bg-emerald-800 text-white font-medium py-2 px-4 rounded transition duration-200 cursor-pointer">
+        Agendar Tour
+      </button>
+    </div>
+    
+    <!-- Card 2 -->
+    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 flex flex-col justify-between">
+      <div>
+        <span class="text-xs font-bold text-emerald-700 uppercase tracking-wider">Benefícios</span>
+        <h3 class="text-xl font-bold text-gray-900 mt-1 mb-2">Sócio Avanti</h3>
+        <p class="text-gray-600 text-sm mb-6">
+          Prioridade máxima e descontos exclusivos na compra de ingressos para todos os jogos do Verdão.
+        </p>
       </div>
-    </section>
+      <button class="border-2 border-emerald-700 text-emerald-700 hover:bg-emerald-700 hover:text-white font-medium py-2 px-4 rounded transition duration-200 cursor-pointer">
+        Ver Planos
+      </button>
+    </div>
+    
+    <!-- Card 3 -->
+    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 flex flex-col justify-between">
+      <div>
+        <span class="text-xs font-bold text-emerald-700 uppercase tracking-wider">História</span>
+        <h3 class="text-xl font-bold text-gray-900 mt-1 mb-2">Sala de Troféus</h3>
+        <p class="text-gray-600 text-sm mb-6">
+          Reviva mais de um século de história e veja de perto as três taças da Copa Libertadores.
+        </p>
+      </div>
+      <button class="bg-emerald-700 hover:bg-emerald-800 text-white font-medium py-2 px-4 rounded transition duration-200 cursor-pointer">
+        Visitar Sala
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<section id="galeria" class="mb-16">
+  <h2 class="text-2xl font-bold text-emerald-950 mb-2 flex items-center gap-2">Momentos Eternos</h2>
+  <p class="text-gray-600 text-sm mb-6">
+    Passe o mouse sobre as imagens para revelar as cores e o foco da torcida que canta e vibra.
+  </p>
+
+  <div class="flex flex-col md:flex-row gap-6">
+    <!-- Imagem 1: Efeito Blur (Desfoque -> Foco) -->
+    <div class="w-full md:w-1/2 overflow-hidden rounded-xl shadow-md">
+      <img class="w-full h-64 object-cover blur-xs hover:filter-none transition duration-500 ease-in-out cursor-pointer"
+        src="https://s2-ge.glbimg.com/Nfe0H3VNlLumpaIiKbrd3HQ01K0=/5568x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2024/0/H/wJHb9BTrq10j256YAaTw/rib7512.jpg" 
+        alt="Estádio e torcida">
+      <div class="bg-white p-3 text-center border-t border-gray-100">
+        <span class="text-xs font-semibold text-emerald-800">Nubank Parque em dia de festa</span>
+      </div>
+    </div>
+
+    <!-- Imagem 2: Efeito Grayscale (Preto e branco -> Cores) -->
+    <div class="w-full md:w-1/2 overflow-hidden rounded-xl shadow-md">
+      <img class="w-full h-64 object-cover grayscale hover:filter-none transition duration-500 ease-in-out cursor-pointer"
+        src="https://imagenes.elpais.com/resizer/v2/IIRIBRKXY7GGECXXIXBHQVHHAM.jpg?auth=fde4db3e4437babc18721315949868fc7d4c8f138d5bdb96e7a1809819ab1a66&width=1960&height=1103&smart=true" 
+        alt="Futebol e celebração">
+      <div class="bg-white p-3 text-center border-t border-gray-100">
+        <span class="text-xs font-semibold text-emerald-800">A emoção da Glória Eterna</span>
+      </div>
+    </div>
+  </div>
+</section>
 
     <section id="animation" class="mb-12">
       <div class="flex items-center gap-7">
