@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SE Palmeiras</title>
-    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   
   <!-- FONTE OFICIAL DO PALMEIRAS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,6 +48,12 @@
   <p class="text-gray-600 text-lg max-w-2xl mx-auto mb-6">
     Uma história de lutas e de glórias, academias inesquecíveis e a paixão incondicional de milhões de palestrinos.
   </p>
+  <div class="overflow-hidden rounded-2xl shadow-xl border-4 border-emerald-800 max-w-4xl mx-auto">
+    <img 
+      class="w-full h-64 md:h-80 object-cover" 
+      src="https://static.gazetaesportiva.com/uploads/imagem/2019/04/26/D4iFIISW0AAtgcb-1024x575.jpg"
+      alt="Nubank Parque em dia de jogo do Palmeiras">
+  </div>
 </header>
     
     <!-- ---------------------------
@@ -182,19 +188,103 @@
   </div>
 </section>
 
-    <section id="animation" class="mb-12">
-      <div class="flex items-center gap-7">
-        <i class="animate-ping text-3x1 bx bx-heart"></i>
-        <i class="animate-bounce text-5x1 bx bx-arrow-down-stroke"></i>
-        <i class="animate-spin [animation-duration:2s] text-6x1 bx bx-circle-dashed-half"></i>
+<section id="filosofia" class="mb-16">
+  <div class="bg-white p-8 md:p-10 rounded-2xl shadow-sm border-l-4 border-emerald-700 relative">
+    
+    <div class="flex items-center gap-3 mb-4">
+      <span class="text-xs font-bold text-emerald-700 uppercase tracking-wider">Filosofia do Professor</span>
+      
+      <!-- Coração verde pulsando -->
+            <!-- Coração verde pulsando -->
+      <div class="relative flex items-center justify-center">
+        <i class="animate-ping absolute text-xl text-emerald-400 bx bx-heart"></i>
+        <i class="text-xl text-emerald-700 bx bx-heart"></i>
       </div>
-    </section>
+    </div>
+
+    <blockquote class="text-2xl md:text-3xl font-extrabold text-emerald-950 italic mb-6 leading-snug">
+      “Cabeça fria, coração quente.”
+    </blockquote>
+
+    <div class="flex items-center justify-between flex-wrap gap-4 pt-4 border-t border-gray-100">
+      <div class="flex items-center gap-3">
+                <img 
+          class="w-12 h-12 rounded-full object-cover border-2 border-emerald-600 shadow-sm" 
+          src="https://mmakers.com.br/uploads/2025/11/abel-e1649413702461.jpg" 
+          alt="Abel Ferreira">
+        <div>
+          <h4 class="font-bold text-gray-900 text-base">Abel Ferreira</h4>
+          <p class="text-xs text-gray-500">Técnico Bicampeão da América</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2 bg-emerald-50 text-emerald-800 px-4 py-2 rounded-full text-xs font-semibold">
+        <i class="bx bxs-trophy text-amber-500 animate-bounce text-lg"></i>
+        <span>Mais de 10 taças na era vitoriosa</span>
+      </div>
+    </div>
+
+  </div>
+</section>
     
   </div>
   
-  <footer class="bg-gray-900 text-white text-center py-4">
-    Demo Tailwind CSS
-  </footer>
+  <footer class="bg-emerald-950 text-white pt-12 pb-8 px-6">
+  <div class="max-w-5xl mx-auto">
+    
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8 pb-8 border-b border-emerald-800">
+      <div>
+        <div class="flex items-center gap-2 mb-1">
+          <i class="bx bxs-trophy text-2xl text-emerald-400"></i>
+          <span class="text-xl font-black tracking-wider">SE PALMEIRAS</span>
+        </div>
+        <p class="text-emerald-300 text-sm">O Maior Campeão do Brasil — Desde 1914</p>
+      </div>
+
+      <div class="flex items-center gap-4 text-2xl text-emerald-300">
+        <a href="#" class="hover:text-white transition"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="hover:text-white transition"><i class="bx bxl-youtube"></i></a>
+        <a href="#" class="hover:text-white transition"><i class="bx bxl-twitter"></i></a>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 text-sm">
+      
+      <!-- Coluna 1 -->
+      <div>
+        <span class="text-xs uppercase text-emerald-400 font-bold tracking-widest block mb-2">Sede Social</span>
+        <p class="text-emerald-100 leading-relaxed">
+          Rua Palestra Itália, 214 — Perdizes<br>
+          São Paulo - SP, CEP 05005-030
+        </p>
+      </div>
+
+      <div>
+        <span class="text-xs uppercase text-emerald-400 font-bold tracking-widest block mb-2">Casa Alviverde</span>
+        <p class="text-emerald-100 leading-relaxed">
+          Nubank Parque & Palestra Itália<br>
+          Acessos pela Av. Francisco Matarazzo
+        </p>
+      </div>
+
+      <!-- Coluna 3 -->
+      <div>
+        <span class="text-xs uppercase text-emerald-400 font-bold tracking-widest block mb-2">Central Avanti</span>
+        <p class="text-emerald-100 leading-relaxed">
+          contato@palmeiras.com.br<br>
+          0800-777-1914 (Segunda a Sábado)
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="pt-6 border-t border-emerald-900 text-center text-xs text-emerald-400">
+      <p>© 2026 Sociedade Esportiva Palmeiras </p>
+    </div>
+
+  </div>
+</footer>
   
 </body>
 </html>

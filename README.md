@@ -48,23 +48,26 @@ Aplicação voltada para o comércio gamer fictício **Game Center**, estruturad
 
 ---
 
-## 🎨 2. Tailwind CSS — Tailwind na Prática
+## 🎨 2. Tailwind CSS — Sociedade Esportiva Palmeiras
 
-Interface desenvolvida sob o conceito **utility-first**, explorando a composição de estilos diretamente no markup HTML sem a necessidade de folhas de estilo externas personalizadas.
+Interface desenvolvida sob o conceito **utility-first**, explorando a identidade visual alviverde da Sociedade Esportiva Palmeiras (tons esmeralda, branco e dourado) com composição de estilos diretamente no markup HTML sem folhas de estilo externas personalizadas.
 
 ### 📸 Preview do Site Criado
-![Preview - Tailwind na Prática](assets/screenshots/tailwind-preview.png)
+![Preview - Tailwind Palmeiras](assets/screenshots/tailwind-preview.png)
 
 ### ✨ Destaques e Recursos Demonstrados
-- **Navbar Utilitária:** Layout flexível com alinhamento responsivo (`flex items-center justify-between`) e estados de foco/hover nos links de navegação (`hover:text-cyan-600`).
-- **Sistema de Grid Nativo:** Demonstração prática do CSS Grid aplicado via utilitários (`grid`, `grid-cols-3`, `gap-4`), incluindo mesclagem de colunas (`col-span-2` e `col-span-1`).
-- **Cards e Botões Componentizados:** Cards estruturados com cantos arredondados, sombras sutis e variantes de botões (botão de destaque sólido e botão em formato *outline*).
-- **Filtros e Transições em Imagens:** Galeria demonstrando o uso de classes de efeitos visuais (`blur-xs`, `grayscale`) com transições suaves ativadas ao passar o mouse (`hover:filter-none transition duration-500`).
-- **Animações Nativas:** Demonstração de utilitários de animação (`animate-ping`, `animate-bounce`, `animate-spin`) integrados a ícones vetoriais.
+- **Navbar Temática & Ação Rápida:** Layout flexível com alinhamento responsivo (`flex items-center justify-between`), ícone de troféu, links com estados hover (`hover:text-emerald-400`) e botão de destaque para o plano *Avanti*.
+- **Hero & Banner Imersivo:** Título imponente com tipografia Montserrat (`text-4xl md:text-5xl font-extrabold text-emerald-950`), subtítulo institucional e moldura fotográfica do estádio (`rounded-2xl shadow-xl border-4 border-emerald-800`).
+- **Sistema de Grid Nativo (Conquistas e Arena):** Grid utilitário (`grid`, `grid-cols-1 md:grid-cols-3`, `gap-4`) para os títulos históricos (12 Brasileirões, 3 Libertadores, 4 Copas do Brasil) e mesclagem de colunas (`col-span-2` para o Allianz Parque e `col-span-1` para o Programa Avanti) com borda decorativa inspirada nas raízes do clube.
+- **Cards & Variantes de Botões:** Seção de experiências alviverdes com cards estruturados (`bg-white p-6 rounded-lg shadow-sm`) e diferenciação clara entre botão de ação sólido (`bg-emerald-700`) e botão em formato *outline* (`border-2 border-emerald-700 hover:bg-emerald-700`).
+- **Filtros e Transições em Imagens (Momentos Eternos):** Galeria fotográfica demonstrando utilitários de filtros visuais (`blur-xs`, `grayscale`) com revelação de foco e cores ao passar o mouse (`hover:filter-none transition duration-500 ease-in-out`).
+- **Filosofia do Treinador com Animações Integradas:** Citação marcante de Abel Ferreira (*"Cabeça fria, coração quente"*) combinando foto em avatar circular (`rounded-full object-cover`), selo de taças com salto contínuo (`animate-bounce`) e coração alviverde pulsando (`animate-ping`).
+- **Footer Institucional Completo:** Rodapé em tom esmeralda escuro (`bg-emerald-950 text-white`) estruturado em 3 colunas de dados (Sede Social, Casa Alviverde e Central Avanti), ícones de redes sociais e copyright.
 
 ### 🛠️ Tecnologias
 - **HTML5:** Estrutura semântica.
 - **Tailwind CSS (v4 via Browser Runtime / CDN):** Framework utility-first para estilização rápida.
+- **Google Fonts (Montserrat):** Tipografia oficial e esportiva.
 - **Boxicons:** Biblioteca de ícones vetoriais via CDN.
 
 ---
