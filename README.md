@@ -35,11 +35,14 @@ Landing page institucional do Palmeiras estruturada com classes utilitárias do 
 
 ---
 
-## 💳 3. VibeCode — Banco Digital Minimalista
+## 💳 3. VibeCode — Zenit Finance
 
-Landing page desenvolvida através da metodologia de **Vibe Coding**, explorando comunicação com IA, decisões de identidade visual, registro de prompts e revisões críticas para um app financeiro moderno.
+Landing page de um banco digital minimalista desenvolvida sob a metodologia de **Vibe Coding**. O projeto explora estética dark mode refinada, smartphone funcional desenhado em CSS, cartão virtual com efeito 3D interativo, comparativo de rendimentos e registro completo de prompts e decisões de design.
 
-- **Status:** Em desenvolvimento 🚀
+![Preview - Zenit Finance VibeCode](assets/screenshots/vibecode-preview.png)
+
+- **Tecnologias:** HTML5, CSS3 Puro, Google Fonts (Hanken Grotesk), GSAP 3.13.0, ScrollTrigger, Lenis 1.3.4.
+- **Diário de Bordo:** [`vibecode/processo-vibecode.md`](vibecode/processo-vibecode.md)
 
 ---
 
