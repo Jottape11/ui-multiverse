@@ -6,6 +6,11 @@ O objetivo principal desta atividade é aplicar o conceito de **utility-first CS
 
 ---
 
+## 📸 Preview da Interface
+![Preview - Tailwind Palmeiras](../assets/screenshots/tailwind-preview.png)
+
+---
+
 ## 🚀 Funcionalidades e Estrutura da Página
 
 - **Navegação (Navbar):**
